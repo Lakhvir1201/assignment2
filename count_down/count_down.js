@@ -27,8 +27,8 @@ $(document).ready(() => {
       messageLbl.text("Month should be between 01-12");
       return;
     }
-
-    const daysInMonth = new Date(year, month, 0).getDate();
+    //I searched for `how to get days in month javascript`
+    // Reference: https://www.geeksforgeeks.org/how-to-get-the-number-of-days-in-a-specified-month-using-javascript/
 
     if (day < 1 || day > daysInMonth) {
       messageLbl.text("Invalid days in month");

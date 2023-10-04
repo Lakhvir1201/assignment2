@@ -36,6 +36,7 @@ $(document).ready(() => {
     }
 
     if (!invoiceDate) {
+      //Reference: https://www.w3schools.com/js/js_date_methods.asp
       let date = new Date();
       const mm = date.getMonth() + 1;
       const dd = date.getDate();
@@ -62,6 +63,8 @@ $(document).ready(() => {
       alert("Month should be between 01-12");
       return;
     }
+    // Here I used the same logic from count_down
+    // Reference: https://www.geeksforgeeks.org/how-to-get-the-number-of-days-in-a-specified-month-using-javascript/
 
     const daysInMonth = new Date(year, month, 0).getDate();
 
